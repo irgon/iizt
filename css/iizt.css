@@ -1,0 +1,837 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, button
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	font-size: 18px;
+	line-height: 25px;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    overflow: auto;
+}
+
+#wrapper {
+    height: 477px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -193px;
+    overflow: visible;
+    width: 100%;
+}
+
+#scrollContent {
+    height: 346px;
+    padding: 0 10px 0 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#scrollContent div.category {
+    float: left;
+    overflow: hidden;
+}
+
+#contact {
+    width: 944px;
+}
+
+#scrollContent div h3.title {
+    width: 60px;
+    height: 346px;
+    float: left;
+    margin-left: 10px;
+    text-indent: -1000em;
+}
+
+div.card {
+    width: 864px;
+    height: 346px;
+    margin-left: 10px;
+    float: left;
+    padding: 0;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    background: url(../img/loader.gif) no-repeat;
+}
+
+div.card .picture,
+div.card .main {
+    width: 432px;
+    height: 346px;
+    display: block;
+    text-indent: -1000em;
+    float: right;
+}
+
+div.card object {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.card ul.links {
+    position: absolute;
+    left: 451px;
+    bottom: 14px;
+}
+
+div.card ul.links li {
+    display: inline;
+}
+
+div.card ul.links li a {
+    color: #ffffff;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
+
+div.card ul.links li:before {
+    content: " / ";
+}
+
+div.card ul.links li:first-child:before {
+    content: "";
+}
+
+div.card p,
+div.card div.addresses {
+    position: absolute;
+    top: 24px;
+    left: 453px;
+    width: 391px;
+}
+
+div.card div.addresses address:first-child {
+    margin-right: 70px;
+}
+
+div.card div.addresses address {
+    width: 155px;
+    float: left;
+    line-height: 23px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div.card div.addresses address em {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#welcome div.welcome p {
+    top: 230px;
+    line-height: 27px;
+}
+
+#contact div.card a {
+    color: #00ff00;
+}
+
+#jobs div.card a {
+    color: #00ff00;
+}
+
+#menu {
+    height: 111px;
+    width: 100%;
+/*    position: absolute;
+    left: 0;
+    bottom: 0;*/
+    position: fixed;
+    top: 50%;
+    margin-top: 173px;
+    padding-top: 20px;
+}
+
+#menu #logo {
+    width: 145px;
+    height: 111px;
+    text-indent: -1000em;
+    background: url(../img/logo-iizt.png) no-repeat;
+    margin-left: 22px;
+}
+
+#menu ul {
+    width: 720px;
+    height: 30px;
+    position: absolute;
+    top: 54px;
+    left: 280px;
+}
+
+#menu ul li {
+    float: left;
+    margin-left: 5px;
+    width: 115px;
+    background: url(../img/menu-tab.png) no-repeat;
+    position: relative;
+}
+
+#menu ul li a {
+    padding: 0 13px 0 4px;
+    width: 98px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#menu ul li a.menu:hover,
+#menu ul li.selected a.menu {
+    background: url(../img/menu-tab-hover.png) no-repeat;
+}
+
+#menu ul li.selected span {
+    display: block !important;
+}
+
+#menu ul li,
+#menu ul li a,
+#menu ul li span {
+    display: block;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+#menu ul li span {
+    background: url(../img/menu-tab-hover.png) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115px;
+}
+
+#scrollbar {
+    width: 100%;
+    height: 12px;
+    background: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#scrollbar #scroll {
+    width: 150px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-color: #00ff00;
+    background-image: url(../img/scroll.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: move;
+}
+
+div.history ul.historylinks {
+    position: absolute;
+    top: 80px;
+    left: 432px;
+}
+
+div.history ul.historylinks,
+div.history ul.historylinks li,
+div.history ul.historylinks ul {
+    list-style: none;
+    font-size: 12px;
+    line-height: 23px;
+}
+
+div.history ul.historylinks li.column {
+    float: left;
+    border-right: solid 1px #00ff00;
+    padding: 0 10px;
+    width: 195px;
+    overflow: hidden;
+}
+
+div.history ul.historylinks li.column ul {
+    float: left;
+}
+
+div.history ul.historylinks li.last {
+    border-right: none;
+}
+
+div.history ul.historylinks li ul li,
+div.history ul.historylinks li ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 23px;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+}
+
+div.welcome .picture {
+    background: url(../img/welcome.jpg) no-repeat;
+}
+
+div.years7 .picture {
+    background: url(../img/7years.jpg) no-repeat;
+}
+
+div.tattoo .picture {
+    background: url(../img/tatto_girl.png) no-repeat;
+}
+
+div.gstar .picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 4px;
+    height: 346px;
+    background: url(../img/video-corners.png) no-repeat;
+}
+
+div.playboy .picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 4px;
+    height: 346px;
+    background: url(../img/video-corners.png) no-repeat;
+}
+
+div.twitter .picture {
+	 background: url(../img/twitter.png) no-repeat;
+}
+
+div.klm .picture {
+	 background: url(../img/KLM1.jpg) no-repeat;
+}
+
+div.playboy1 .picture {
+	 background: url(../img/PB1.jpg) no-repeat;
+}
+
+div.jcrags .picture {
+	 background: url(../img/JC1.jpg) no-repeat;
+}
+
+
+div.crm .picture {
+	 background: url(../img/crm.png) no-repeat;
+}
+
+div.nutrilon .picture {
+    background: url(../img/nutrilon.jpg) no-repeat;
+}
+
+div.emerce .picture {
+    background: url(../img/emerce.jpg) no-repeat;
+}
+
+div.lovemachine .picture {
+    background: url(../img/lovemachine.jpg) no-repeat;
+}
+
+div.eetwijzer .picture {
+    background: url(../img/eetwijzer.jpg) no-repeat;
+}
+
+div.psp .picture {
+    background: url(../img/psp-left.png) no-repeat;
+}
+
+div.respectance .picture {
+    background: url(../img/respectance-left.png) no-repeat;
+}
+
+div.babybook .picture {
+    background: url(../img/babybook-left.png) no-repeat;
+}
+
+div.wedding .picture {
+    background: url(../img/wedding.jpg) no-repeat;
+}
+
+div.stoppenmetroken .picture {
+    background: url(../img/stoppenmetroken-left.jpg) no-repeat;
+}
+
+div.restaurant .picture {
+    background: url(../img/restaurant-left.jpg) no-repeat;
+}
+
+div.nutricia .picture {
+    background: url(../img/nutricia-left.jpg) no-repeat;
+}
+
+div.verstegen .picture {
+    background: url(../img/verstegen-left.jpg) no-repeat;
+}
+
+div.olvarit .picture {
+    background: url(../img/olvarit.jpg) no-repeat;
+}
+
+div.history .picture {
+    background: url(../img/history-left.gif) no-repeat;
+}
+
+div.history {
+    width: 1518px;
+    background: url(../img/loader-history.gif) no-repeat;
+}
+
+div.omdnl .picture {
+    background: url(../img/omdnl-left.png) no-repeat;
+}
+
+div.sanexpsd .picture {
+    background: url(../img/sanexpsd-left.jpg) no-repeat;
+}
+
+div.story .picture {
+    background: url(../img/story-left.png) no-repeat;
+}
+
+div.vliegwinkel .picture {
+    background: url(../img/vliegwinkel-left.png) no-repeat;
+}
+
+div.crunchman .picture {
+    background: url(../img/crunchman-left.png) no-repeat;
+}
+
+div.uva .picture {
+    background: url(../img/uva-left.png) no-repeat;
+}
+
+div.happyox .picture {
+    background: url(../img/happyox-left.jpg) no-repeat;
+}
+
+div.schiphol .picture {
+    background: url(../img/schiphol-left.png) no-repeat;
+}
+
+div.friendlyfood .picture {
+    background: url(../img/friendlyfood.jpg) no-repeat;
+}
+
+div.durex .picture {
+    background: url(../img/durex.jpg) no-repeat;
+}
+
+div.hyvesbabies .picture {
+    background: url(../img/hyvesbabies.jpg) no-repeat;
+}
+
+div.humanitas .picture {
+    background: url(../img/humanitas-left.png) no-repeat;
+}
+
+div.lastfriday .picture {
+    background: url(../img/lastfriday.jpg) no-repeat;
+}
+
+div.richard1 .picture {
+    background: url(../img/richard1-left.png) no-repeat;
+}
+
+div.richard2 .picture {
+    background: url(../img/richard2.jpg) no-repeat;
+}
+
+div.canguru .picture {
+    background: url(../img/canguru-left.png) no-repeat;
+}
+
+div.pimpmysite .picture {
+    background: url(../img/pimpmysite-left.png) no-repeat;
+}
+
+div.victor .picture {
+    background: url(../img/victor.jpg) no-repeat;
+}
+
+div.richard .picture {
+    background: url(../img/richard.jpg) no-repeat;
+}
+
+div.niels .picture {
+    background: url(../img/niels.jpg) no-repeat;
+}
+
+div.nick .picture {
+    background: url(../img/nick.jpg) no-repeat;
+}
+
+div.tomek .picture {
+    background: url(../img/tomek.jpg) no-repeat;
+}
+
+div.mariette .picture {
+    background: url(../img/mariette.jpg) no-repeat;
+}
+
+div.dirk .picture {
+    background: url(../img/dirk.jpg) no-repeat;
+}
+
+div.anna .picture {
+    background: url(../img/anna.jpg) no-repeat;
+}
+
+div.anne .picture {
+    background: url(../img/anne-marie.jpg) no-repeat;
+}
+
+div.ada .picture {
+	 background: url(../img/ada.png) no-repeat;
+}
+
+div.kris .picture {
+    background: url(../img/kris.jpg) no-repeat;
+}
+
+div.hubert .picture {
+    background: url(../img/hubert.jpg) no-repeat;
+}
+
+div.slawek .picture {
+    background: url(../img/slawek.jpg) no-repeat;
+}
+
+div.greg .picture {
+    background: url(../img/greg.jpg) no-repeat;
+}
+
+div.esther .picture {
+    background: url(../img/esther.jpg) no-repeat;
+}
+
+div.vlasta .picture {
+    background: url(../img/vlasta.jpg) no-repeat;
+}
+
+div.naomi .picture {
+    background: url(../img/naomi.jpg) no-repeat;
+}
+
+div.jobs .picture {
+    background: url(../img/jobs-left.jpg) no-repeat;
+}
+
+div.contact .picture {
+    background: url(../img/contact.jpg) no-repeat;
+}
+
+div.quiz2011 .picture {
+    background: url(../img/quiz2011.jpg) no-repeat;
+}
+
+div.quiz2011 .main {
+    background: url(../img/quiz2011.png) no-repeat;
+}
+
+div.twitter .main {
+    background: url(../img/twitter-left.png) no-repeat;
+}
+
+div.playboy .main {
+    background: url(../img/playboy.png) no-repeat;
+}
+
+div.welcome .main {
+    background: url(../img/welcome.png) no-repeat;
+}
+
+div.crm .main {
+	background: url(../img/crm_rigth.png) no-repeat;
+}
+
+div.klm .main {
+    background: url(../img/klm.png) no-repeat;
+}
+
+div.jcrags .main {
+    background: url(../img/jcrags.png) no-repeat;
+}
+
+div.playboy1 .main {
+    background: url(../img/playboy1.png) no-repeat;
+}
+
+div.gstar .main {
+    background: url(../img/gstar.png) no-repeat;
+}
+
+div.nutrilon .main {
+    background: url(../img/nutrilon.png) no-repeat;
+}
+
+div.tattoo .main {
+    background: url(../img/tattoo.png) no-repeat;
+}
+
+div.years7 .main {
+    background: url(../img/7years.png) no-repeat;
+}
+
+div.emerce .main {
+    background: url(../img/emerce.png) no-repeat;
+}
+
+div.lovemachine .main {
+    background: url(../img/lovemachine.png) no-repeat;
+}
+
+div.eetwijzer .main {
+    background: url(../img/eetwijzer.png) no-repeat;
+}
+
+div.psp .main {
+    background: url(../img/psp.png) no-repeat;
+}
+
+div.respectance .main {
+    background: url(../img/respectance.png) no-repeat;
+}
+
+div.babybook .main {
+    background: url(../img/babybook.png) no-repeat;
+}
+
+div.wedding .main {
+    background: url(../img/wedding.png) no-repeat;
+}
+
+div.stoppenmetroken .main {
+    background: url(../img/stoppenmetroken.png) no-repeat;
+}
+
+div.restaurant .main {
+    background: url(../img/restaurant.png) no-repeat;
+}
+
+div.nutricia .main {
+    background: url(../img/nutricia.png) no-repeat;
+}
+
+div.verstegen .main {
+    background: url(../img/verstegen.png) no-repeat;
+}
+
+div.friendlyfood .main {
+    background: url(../img/friendlyfood.png) no-repeat;
+}
+
+div.durex .main {
+    background: url(../img/durex.png) no-repeat;
+}
+
+div.schiphol .main {
+    background: url(../img/schiphol.png) no-repeat;
+}
+
+div.hyvesbabies .main {
+    background: url(../img/hyvesbabies.png) no-repeat;
+}
+
+div.humanitas .main {
+    background: url(../img/humanitas.png) no-repeat;
+}
+
+div.olvarit .main {
+    background: url(../img/olvarit.png) no-repeat;
+}
+
+div.history .main {
+    background: url(../img/history.png) no-repeat;
+    width: 1086px;
+}
+
+div.omdnl .main {
+    background: url(../img/omdnl.png) no-repeat;
+}
+
+div.sanexpsd .main {
+    background: url(../img/sanexpsd.png) no-repeat;
+}
+
+div.story .main {
+    background: url(../img/story.png) no-repeat;
+}
+
+div.vliegwinkel .main {
+    background: url(../img/vliegwinkel.png) no-repeat;
+}
+
+div.crunchman .main {
+    background: url(../img/crunchman.png) no-repeat;
+}
+
+div.uva .main {
+    background: url(../img/uva.png) no-repeat;
+}
+
+div.happyox .main {
+    background: url(../img/happyox.png) no-repeat;
+}
+
+div.richard1 .main {
+    background: url(../img/richard1.png) no-repeat;
+}
+
+div.lastfriday .main {
+    background: url(../img/lastfriday.png) no-repeat;
+}
+
+div.richard2 .main {
+    background: url(../img/richard2.png) no-repeat;
+}
+
+div.canguru .main {
+    background: url(../img/canguru.png) no-repeat;
+}
+
+div.pimpmysite .main {
+    background: url(../img/pimpmysite.png) no-repeat;
+}
+
+div.richard .main {
+    background: url(../img/richard.png) no-repeat;
+}
+
+div.niels .main {
+    background: url(../img/niels.png) no-repeat;
+}
+
+div.victor .main {
+    background: url(../img/victor.png) no-repeat;
+}
+
+div.nick .main {
+    background: url(../img/nick.png) no-repeat;
+}
+
+div.mariette .main {
+    background: url(../img/mariette.png) no-repeat;
+}
+
+div.tomek .main {
+    background: url(../img/tomek.png) no-repeat;
+}
+
+div.dirk .main {
+    background: url(../img/dirk.png) no-repeat;
+}
+
+div.anna .main {
+    background: url(../img/anna.png) no-repeat;
+}
+
+div.anne .main {
+    background: url(../img/anne-marie2.png) no-repeat;
+}
+
+div.hubert .main {
+    background: url(../img/hubert.png) no-repeat;
+}
+
+div.slawek .main {
+    background: url(../img/slawek.png) no-repeat;
+}
+
+div.greg .main {
+    background: url(../img/greg.png) no-repeat;
+}
+
+div.kris .main {
+    background: url(../img/kris.png) no-repeat;
+}
+
+div.esther .main {
+    background: url(../img/esther.png) no-repeat;
+}
+
+div.vlasta .main {
+    background: url(../img/vlasta.png) no-repeat;
+}
+
+div.naomi .main {
+    background: url(../img/naomi.png) no-repeat;
+}
+
+div.ada .main {
+	 background: url(../img/ada_right.png) no-repeat;
+}
+
+div.jobs .main {
+    background: url(../img/jobs.png) no-repeat;
+}
+
+div.contact .main {
+    background: url(../img/contact.png) no-repeat;
+}
+
+#welcome h3.title {
+    background: url(../img/tab-welcome.png) no-repeat;
+}
+
+#work h3.title {
+    background: url(../img/tab-works.png) no-repeat;
+}
+
+#besides h3.title {
+    background: url(../img/tab-besides.png) no-repeat;
+}
+
+#people h3.title {
+    background: url(../img/tab-people.png) no-repeat;
+}
+
+#jobs h3.title {
+    background: url(../img/tab-jobs.png) no-repeat;
+}
+
+#contact h3.title {
+    background: url(../img/tab-contact.png) no-repeat;
+}
+
+.wanted {
+    color: #00ff00;
+    list-style: none;
+    font-size: 24px;
+}
+
+div.wanted {
+    position: absolute;
+    left: 453px;
+    top: 90px;
+}
+
+div.wanted a {
+    font-size: 20px;
+}
